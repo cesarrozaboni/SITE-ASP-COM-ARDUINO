@@ -1,0 +1,24 @@
+﻿.Home01 {
+    Font-Size: Larger;
+    font-weight: bold;
+}
+
+.Home02 {
+    Font-Size: Larger;
+    font-weight: bold;
+    Color: blue;
+}
+
+.Home03 {
+    width: 100%;
+    background-color: blanchedalmond;
+    text-align: center;
+    height: 1%;
+    vertical-align: middle;
+}
+
+.Home04 {
+    Width: 65%;
+    Height: 60%;
+    margin-left: 17%;
+}

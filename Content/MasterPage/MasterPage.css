@@ -1,0 +1,53 @@
+﻿.divRight {
+    width: 8%;
+    margin-left: 92%;
+    height: 100%;
+    float: right;
+    background-color: #c7c1c1;
+    position: absolute;
+}
+
+.divLeft {
+    width: 10%;
+    height: 100%;
+    background-color: #c7c1c1;
+    position: absolute;
+}
+
+.divTop {
+    background-color: #c7c1c1;
+    height: 10%;
+    width: 100%;
+    position: absolute;
+}
+
+.divCentral {
+    width: 80%;
+    height: 83%;
+    position: absolute;
+    margin-left: 11%;
+    top: 12%;
+}
+
+.divMenu {
+    margin-left: 10%;
+    padding: 1%;
+    float: left;
+    position: relative;
+}
+
+.Menu {
+    background-color:#b7a4a4;
+    border-width:2px;
+    font-weight:bold;
+    Font-Size: Medium;
+    Color:#ff6a00;
+}
+
+.divImagem {
+    width: 90%; 
+    position: relative; 
+    margin-top: 3%; 
+    float: left; 
+    margin-left: 5%;
+}

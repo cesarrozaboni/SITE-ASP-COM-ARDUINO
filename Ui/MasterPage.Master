@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="TCC.MasterPage" %>
+
+<%@ Register Assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Namespace="System.Web.UI.DataVisualization.Charting" TagPrefix="asp" %>
+<%@ Register Src="~/UserControl/Mensagem.ascx" TagPrefix="uc1" TagName="Mensagem" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="../Content/MasterPage/MasterPage.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="divTop">
+        </div>
+
+
+        <div class="divMenu">
+            <asp:Menu ID="Menu1" CssClass="Menu" runat="server" DynamicEnableDefaultPopOutImage="False" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" RenderingMode="Table">
+                <Items>
+                    <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/UI/Home.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Cadastros" Value="Cadastros">
+                        <asp:MenuItem Text="Cadastro De Usuario" Value="Cadastros" NavigateUrl="~/UI/CadastroUsuario.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Consultas" Value="Consultas">
+                        <asp:MenuItem NavigateUrl="~/Ui/Temperatura/Temperatura.aspx" Text="Temperatura" Value="Temperatura"></asp:MenuItem>
+                         <asp:MenuItem NavigateUrl="~/Ui/Arduino/Arduino.aspx" Text="Arduino" Value="Arduino"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Sair" Value="Sair" NavigateUrl="~/Login/Login.aspx"></asp:MenuItem>
+                </Items>
+            </asp:Menu>
+        </div>
+
+
+        <div class="divLeft">
+            <asp:ImageButton runat="server" CssClass="divImagem" OnClick="imgFoto_Click" ImageUrl="~/Imagens/engrenagem.jpg" />
+        </div>
+        
+        <div class="divCentral">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div class="divRight">
+        </div>
+
+        <uc1:Mensagem runat="server" ID="Mensagem" />
+        <script src="../Scripts/Geral/MasterPage.js"></script>
+    </form>
+</body>
+</html>

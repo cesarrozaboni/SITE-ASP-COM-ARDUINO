@@ -1,0 +1,32 @@
+﻿.Temp1 {
+    font-weight: 800;
+    font-size: 13px
+}
+
+.Temp2 {
+    font-weight: 800;
+    font-size: 13px;
+    color: blue;
+    
+}
+
+.Temp3 {
+    background-color:khaki;
+    padding:5px;
+    float: left;
+    margin-left: 8%;
+    border:1px solid;
+
+}
+
+.Temp4 {
+    margin-top: 5%;
+}
+
+.Temp5 {
+    border-radius: 5px;
+    width: 90px;
+    height: 25px;
+    text-align: center;
+    padding: 0px;
+}
